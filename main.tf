@@ -1,4 +1,3 @@
-Terra_versioning
 # Define a single AWS EC2 instance
 resource "aws_instance" "example" {
   ami           = var.ami_id
