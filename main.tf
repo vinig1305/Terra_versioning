@@ -21,11 +21,13 @@ resource "aws_security_group" "ssh" {
 }
 
 # Associate the security group with the EC2 instance
-resource "aws_instance" "example2" {
-  security_groups = [aws_security_group.ssh.id]
-  ami           = var.ami_id
-  instance_type = var.instance_type
+resource "aws_instance" "example" {
+  ami           = "ami-02396cdd13e9a1257"
+  instance_type = "t2.micro"
+  key_name      = "Vinig1305"
+  subnet_id     = "subnet-0f4cdd8193abb2545"
+  vpc_security_group_ids = ["sg-0130010fc161b5666"]
   tags = {
-    Name = "example2-instance"
+    Name = "ExampleInstance"
   }
 }
