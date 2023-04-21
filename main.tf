@@ -1,9 +1,9 @@
 # Define a single AWS EC2 instance
 resource "aws_instance" "example" {
-  ami           = "ami-014d05e6b24240371"
+  ami           = "ami-02396cdd13e9a1257"
   instance_type = "t2.micro"
   key_name      = "keypair"
-  subnet_id     = "subnet-0686ed93a3fd19358"
+  subnet_id     = "subnet-0f4cdd8193abb2545"
   tags = {
     Name = "ExampleInstance"
   }
