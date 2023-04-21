@@ -2,7 +2,7 @@
 resource "aws_instance" "example" {
   ami           = "ami-02396cdd13e9a1257"
   instance_type = "t2.micro"
-  key_name      = "keypair"
+  key_name      = "Vinig1305"
   subnet_id     = "subnet-0f4cdd8193abb2545"
   tags = {
     Name = "ExampleInstance"
