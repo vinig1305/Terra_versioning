@@ -1,1 +1,6 @@
 # Terra_versioning
+# Ignore any files that contain credentials or sensitive information
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform/
