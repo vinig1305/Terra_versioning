@@ -2,6 +2,7 @@
 resource "aws_instance" "example" {
   ami           = var.ami_id
   instance_type = var.instance_type
+  ec2:RunInstances
   tags = {
     Name = "example-instance"
   }
