@@ -26,6 +26,6 @@ resource "aws_instance" "example2" {
   ami           = var.ami_id
   instance_type = var.instance_type
   tags = {
-    Name = "example-instance"
+    Name = "example2-instance"
   }
 }
