@@ -19,6 +19,6 @@ resource "aws_security_group" "ssh" {
 }
 
 # Associate the security group with the EC2 instance
-resource "aws_instance" "example" {
+resource "aws_instance" "example2" {
   security_groups = [aws_security_group.ssh.id]
 }
